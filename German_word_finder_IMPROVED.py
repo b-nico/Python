@@ -25,7 +25,7 @@ voc=l.split()
 
 
 
-# create the list of missing letters and calculate its lenght
+# create the list of known letters and the dictionary where they are associated to their positions
 y=[]
 d={}
 for i in range (len(x)):
@@ -38,14 +38,14 @@ for i in range (len(x)):
 #l=len(y)
 #print(d)
 
-#short list of the words with same lenght and initial letter of the searched one, if knwon
+#short list of the words with same lenght and initial letter, if known, of the searched one
 def selist (z):
     vocs=[]
     for i in range (len(voc)):
         if len(voc[i])==len(z) and x[0]=='_':
             vocs.append(voc[i])
         else: 
-           if len(voc[i])==len(z) and voc[i][0]==z[0]: #or voc[i][0]==z[0].upper() or voc[i][0]==z[0].lower()):
+           if len(voc[i])==len(z) and voc[i][0]==z[0]:
              vocs.append(voc[i])
            else:
             voc[i-1]=voc[i]
