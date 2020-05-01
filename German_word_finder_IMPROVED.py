@@ -4,7 +4,14 @@ Created on Wed Apr 29 23:06:46 2020
 
 @author: nicob
 """
+"""
+While trying to solve a German language exercise that requested to guess some words with missing letters, kind of crossword,
+I thought it was a good idea to get a shortlist from automated help.
 
+The German dictionary I found online is not the best one, there are some missing words.
+"""
+
+# x is the searched word, any unknown letter must be entered as _ (underscore)
 x='H_________r'
 
 import itertools as it
