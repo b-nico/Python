@@ -59,7 +59,7 @@ L=[]
 for k in f:
   l=[]  
   for i in y:
-    if k[i]==d[i] and k.find(k[i])==i:
+    if k[i]==d[i]:
         l.append(i)
     else:
         l.append('false')
