@@ -1,2 +1,2 @@
 # Python
-Various codes used for training
+Simple code used for learning Python
